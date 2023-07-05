@@ -4,8 +4,15 @@ import { Card } from '../components/card.tsx'
 import heroImage from "../assets/images/branding.png";
 import whyUsImg from "../assets/images/whyus.jpg"
 import serviceImageOne from "../assets/images/img_02.jpg"
+import innovativeIcon from "../assets/images/Icon/innovative.svg"
+import qualityIcon from "../assets/images/Icon/good-quality.svg"
+import effectiveIcon from "../assets/images/Icon/efficientcy icon.svg"
+import avater from "../assets/images/avata.png"
 import {Heading} from "../components/heading"
+import {WhyusCard} from "../components/whyusCard"
+import {Reviewcard} from "../components/userReviews"
 import { HiOutlineChevronRight } from "react-icons/hi";
+import {Carousel} from "../components/carousel.tsx"
 
 
 
@@ -146,17 +153,20 @@ export const Home = () => {
 
       
       <Heading mainHeading="Why Us Section" subHeading="Lorem ipsum cidunt amet quasi cidunt amet cidunt ametdolorum" />
-      <figure>
+      <figure className="mt-8">
       <img src={whyUsImg} className="rounded-lg" alt="why us image"/>
       </figure>
 
       <div className="whyFeatures">
       <div className="container">
-      <div className="card">
-      <img src="" alt="" />
-      <div>
-      <h2 className="card-title">Innovation</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nam, aspernatur aut reprehenderit quae accusantium vel libero, non voluptate doloribus, dolorum temporibus iusto ipsa obcaecati est quasi delectus. Temporibus, quibusdam.</p>
+      <div className="">
+      
+      <div className="mt-16 flex flex-col gap-16">
+      
+      <WhyusCard  imgSrc={innovativeIcon} title="Innovation" body="body of the components"/>
+      <WhyusCard  imgSrc={qualityIcon} title="Quality" body="body of the components"/>
+      <WhyusCard  imgSrc={effectiveIcon} title="Efficiency" body="body of the components"/>
+      
       </div>
       </div>
       </div>
@@ -164,16 +174,19 @@ export const Home = () => {
       </div>
       </section>
 
-      <section className="reviews">
-      <h3>What Our Client Says</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem dolores facere non perferendis officia ad consequatur voluptatibus repellendus harum asperiores unde cupiditate, pariatur aspernatur quae obcaecati doloremque praesentium neque quisquam.</p>
+      <section className="reviews px-6 mt-16">
 
-      <div className="carousle">
+      <Heading mainHeading="What Our Client Says" subHeading="Aspernatur quae obcaecati doloremque praesentium neque quisquam."/>
+
+      <div className="mt-16">
+
+      <Carousel />      
 
       </div>
+      <div className="mt-64"></div>
       </section>
 
-      <section className="cta">
+      <section className="cta hidden">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea libero optio architecto cumque? Voluptatibus obcaecati voluptas officiis? Est dolor illo nihil dolorem inventore! Aperiam enim velit eos numquam, esse eligendi?</p>
       <button className="btn">Get Quote</button>
       </section>
