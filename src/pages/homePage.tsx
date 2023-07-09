@@ -13,7 +13,8 @@ import {WhyusCard} from "../components/whyusCard"
 import {Reviewcard} from "../components/userReviews"
 import { HiOutlineChevronRight } from "react-icons/hi";
 import {Carousel} from "../components/carousel.tsx"
-
+import {Quotecta} from "../components/getquoteCta"
+import {Footer} from "../components/footer"
 
 
 export const Home = () => {
@@ -183,14 +184,17 @@ export const Home = () => {
       <Carousel />      
 
       </div>
-      <div className="mt-64"></div>
+
       </section>
 
-      <section className="cta hidden">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea libero optio architecto cumque? Voluptatibus obcaecati voluptas officiis? Est dolor illo nihil dolorem inventore! Aperiam enim velit eos numquam, esse eligendi?</p>
-      <button className="btn">Get Quote</button>
+      <section className="cta px-6 mt-16">
+      
+      <Quotecta />
       </section>
       </main>
+      <div className="mt-16">
+      <Footer />
+      </div>
       </>
       )
 
