@@ -112,13 +112,23 @@ export const Home = () => {
 
       </div>
 
-      <div className="bg-blue-50 px-6">
+      <div className="bg-blue-50 px-6 lg:px-16">
 
       {/*<h3 className="text-blue-600 font-bold text-2xl mb-4">What We Offer</h3>
       <h5>Lorem ipsum dolor sit amet aecati incidunt aecati incidunt amet quasi dolorum</h5>*/}
-      <Heading mainHeading="What We Offer" subHeading="Lorem ipsum dolor sit amet aecati incidunt aecati incidunt amet quasi dolorum" />
+      <div className="lg:flex lg:justify-between">
       <div>
-      <div className="cardsContainer flex flex-col gap-8 mt-8">
+      <Heading mainHeading="What We Offer" subHeading="Lorem ipsum dolor sit amet aecati incidunt aecati incidunt amet quasi dolorum" />
+      </div>  
+      <button className="btn bg-transparent text-blue-600 mt-8 lg:mt-0 p-0 cursor-pointer">
+      See all Service
+      < HiOutlineChevronRight/>
+      </button>
+
+
+      </div>
+      <div>
+      <div className="cardsContainer flex flex-col gap-8 mt-8 lg:pb-12 lg:flex-row ">
       
       <Card title="Packaging Design" imgSrc={serviceImageOne} />
       <Card title="Packaging Design" imgSrc={serviceImageOne} />
@@ -127,7 +137,7 @@ export const Home = () => {
       
       </div>
       </div>
-      <button className="btn bg-transparent text-blue-600 mt-8 cursor-pointer">
+      <button className=" hidden btn bg-transparent text-blue-600 mt-8 cursor-pointer">
       See all Service
       < HiOutlineChevronRight/>
       </button>
@@ -150,12 +160,14 @@ export const Home = () => {
 
       <section className="whyUs">
       
-      <div className="px-6">
+      <div className="px-6 lg:px-16 ">
 
       
       <Heading mainHeading="Why Us Section" subHeading="Lorem ipsum cidunt amet quasi cidunt amet cidunt ametdolorum" />
+      
+      <div className="lg:flex lg:justify-between lg:items-center">
       <figure className="mt-8">
-      <img src={whyUsImg} className="rounded-lg" alt="why us image"/>
+      <img src={whyUsImg} className="rounded-lg lg:w-[40vw]" alt="why us image"/>
       </figure>
 
       <div className="whyFeatures">
@@ -173,9 +185,10 @@ export const Home = () => {
       </div>
       </div>
       </div>
+      </div>
       </section>
 
-      <section className="reviews px-6 mt-16">
+      <section className="reviews px-6 mt-16 lg:px-16">
 
       <Heading mainHeading="What Our Client Says" subHeading="Aspernatur quae obcaecati doloremque praesentium neque quisquam."/>
 
@@ -187,7 +200,7 @@ export const Home = () => {
 
       </section>
 
-      <section className="cta px-6 mt-16">
+      <section className="cta px-6 mt-16 lg:px-16">
       
       <Quotecta />
       </section>

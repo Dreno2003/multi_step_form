@@ -6,10 +6,10 @@ export const WhyusCard = ({title, body, imgSrc}) => {
 		<>
 
 		
-		<div className="card card-normal bg-blue-50 rounded-lg shadow-md">
+		<div className="card card-normal bg-blue-50 rounded-lg lg:w-[40vw] shadow-md">
 		<div className="card-body">
 		<div className="card-actions justify-start">
-		<img src={imgSrc} alt="title" className="-mt-16"/>
+		<img src={imgSrc} alt="title" className=" -mt-16"/>
 		</div>
 		<h2 className="card-title text-blue-600">{title}</h2>
 

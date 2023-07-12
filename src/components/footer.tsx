@@ -6,7 +6,7 @@ export const Footer = () => {
 	return(
 
 		<>
-		<footer className="footer p-10 bg-blue-900 text-gray-50">
+		<footer className="footer p-10 bg-blue-900 text-gray-50 lg:px-16">
 		<div>
 		<span className="uppercase font-bold text-md text-white">Services</span> 
 		<a className="link link-hover">Branding</a> 

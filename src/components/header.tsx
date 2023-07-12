@@ -23,7 +23,7 @@ export const Header = () => {
 		<>
 		<header className="absolute inset-x-0 top-0 z-50 bg-white border-b-
 		">
-		<nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+		<nav className="flex items-center justify-between p-6 lg:px-16 lg:py-10" aria-label="Global">
 		<div className="flex lg:flex-1">
 		<a href="#" className="-m-1.5 p-1.5">
 		<span className="sr-only">Your Company</span>
